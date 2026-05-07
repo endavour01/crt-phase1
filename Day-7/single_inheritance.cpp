@@ -6,7 +6,6 @@ class Player
 {
 public:
     string name;
-    int age;
     void setName(string n)
     {
         name = n;
@@ -41,3 +40,5 @@ int main()
 
     return 0;
 }
+
+// doubt :- multiple show functions, code is not running
