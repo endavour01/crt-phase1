@@ -11,6 +11,10 @@ public:
     string section;
     string department;
     int employeeId;
+    virtual void show()
+    {
+        cout << "I am the part of this college" << endl;
+    }
 };
 class student : public college
 { 
@@ -56,10 +60,11 @@ public:
         cout << "Department: " << department << endl;
         cout << "EmployeeId: " << employeeId << endl;
     }
-    virtual void show()
+        void show()
     {
         cout << "I am a teacher of this college" << endl;
     }
+    
 };
 int main()
 {
@@ -70,6 +75,7 @@ int main()
     s1.rollno = "23bcon1005";
     s1.section = "I";
     s1.show1();
+    s1.show();
 
     teacher t1;
     t1.name = "Rohit";
@@ -77,4 +83,5 @@ int main()
     t1.department = "Computer Science";
     t1.employeeId = 12345;
     t1.show2();
+    t1.show();
 }
