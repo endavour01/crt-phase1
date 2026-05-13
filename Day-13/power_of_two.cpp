@@ -13,6 +13,7 @@ bool isPow(int x)
 int main()
 {
     int t;
+    cout << "Enter the Value of t: "; 
     cin >> t;
     int n;
     while (t--)
